@@ -1,33 +1,30 @@
-.App {
-  text-align: center;
-}
+@import '~antd/dist/antd.css';
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.translator-container {
+  padding: 16px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.translator-container .steps {
+  margin-bottom: 16px;
+}
+.translator-container .current-step {}
+.translator-container .current-step .images {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: red;
+  height: 800px;
+  overflow-x: auto;
 }
-
-.App-link {
-  color: #61dafb;
+.translator-container .current-step .images .images-item {
+  margin: 0 10px;
+  background: green;
+  width: 423px;
+  flex-shrink: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.translator-container .current-step .images .images-item .image-content .image {
+  background: pink;
+  width: 423px;
+  height: 600px;
+}
+.translator-container .current-step .upload-file {}
+.translator-container .current-step .images .images-item .image-result {
+  margin-top: 8px;
 }

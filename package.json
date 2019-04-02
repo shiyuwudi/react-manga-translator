@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.16.1",
+    "epub-parse": "davidka/epub-parser",
+    "jszip": "^3.2.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "tesseract.js": "^1.0.14"
   },
   "scripts": {
     "start": "react-scripts start",
